@@ -25,7 +25,7 @@ font-weight: 900;
 }
 span{
     font-size: 50px;
-    color: rgb(123, 8, 205);
+    color: #49366e;
     
 }
 nav ul li a{
@@ -55,7 +55,7 @@ list-style-type: none;
   content: "";
   height: 4.3px;
   width: 0;
-  background-color:rgb(123, 8, 205);/* purple color */
+  background-color:#49366e;/* purple color */
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -99,20 +99,21 @@ list-style-type: none;
 .icons .fa-brands:hover{
     opacity: 0.8;
     transition: 0.1s;
+
 }
 .fa-paper-plane{
     font-size: 24px;
     padding: 5px;
-    color: #120000;
+    color: #540b0b;
 }
 .image{
     width: 75vw;
 }
 .btn {
-    color: #120000;
+    color: #540b0b;
     text-transform: uppercase;
     text-decoration: none;
-    border: 3px solid #845ed6;
+    border: 3px solid #513980;
     border-radius: 17px;
     margin-top: 30px;
     padding: 20px 30px;
@@ -122,13 +123,22 @@ list-style-type: none;
     position: relative;
     transition: all 1s;
     overflow: hidden;
-  }
-  
-  .btn:hover {
-    color: #e1e1e1;
-  }
-  
-  .btn::before {
+}
+
+.btn:hover {
+    color: #e1e1e1; /* Change text color on hover */
+}
+
+.fa-paper-plane {
+    color: #540b0b; /* Initial color of the paper plane icon */
+    transition: color 1s; /* Smooth transition for color change */
+}
+
+.btn:hover .fa-paper-plane {
+    color: #e1e1e1; /* Change paper plane icon color to white on hover */
+}
+
+.btn::before {
     content: '';
     position: absolute;
     height: 100%;
@@ -136,14 +146,16 @@ list-style-type: none;
     top: 0;
     left: -40px;
     transform: skewX(45deg);
-    background-color: #845ed6;
+    background-color: #49366e;
     z-index: -1;
     transition: all 1s;
-  }
-  
-  .btn:hover::before {
+}
+
+.btn:hover::before {
     width: 160%;
-  }
+}
+
+
 
 /* .loader {
     width: 40px;
@@ -250,12 +262,17 @@ list-style-type: none;
       transform: translate(0, -1em) rotate(-225deg);
     }
   } */
+   .About{
+    background-color: #909095;
+   }
    .abouthead{
     font-size: 4.7vh;
     text-align: center;
     padding-top: 3vw;
+    
    }
    .aboutContent{
+   
     padding: 1px;
     display: flex;
     /* background-color: antiquewhite; */
@@ -280,9 +297,13 @@ list-style-type: none;
     justify-content: space-evenly;
     height: 80vh;
    }
+   .aboutpara{
+    margin: 0px 30px;
+   }
    .box{
     display: flex;
     justify-content: space-evenly;
+    
 
    }
    .box0{
@@ -292,32 +313,52 @@ list-style-type: none;
     border-style: solid;
     border-width: 2.5px;
     padding: 45px;
+    background-color: rgb(175, 175, 174);
     margin: 0px 5vw 0px 0px;
    }
    .box0:hover{
     box-shadow: 0px 0px 20px 1px #3a0303 ;
     border: 1px solid rgba(255, 255, 255, 0.454);
    }
+
    .fa-solid{
     margin-left: 10px;
     display: flex;
     align-self: center;
    }
-   #btnresume{
+
+   
+   #btnresume {
     font-size: 22px;
-    color: #3a0303 ;
+    color: #3a0303;
     padding: 15px;
     align-self: flex-start;
     margin: 0px 30px;
     border-radius: 17px;
-    background-color: transparent;
-    border: 3px solid #3a0303 ;
-   }
-   .aboutpara{
-        margin: 0px 30px;
-   }
-      .portfolio{
-      /* background-color: antiquewhite; */
+    background-color: rgb(175, 175, 174);
+    border: 3px solid #3a0303;
+    transition: all 0.5s ease;
+}
+
+#btnresume:hover {
+    background-color: #3a0303; /* Change background color on hover */
+    color: #ffffff; /* Change text color on hover */
+    border-color: #ffffff; /* Change border color on hover */
+}
+
+#btnresume:hover .fa-file {
+    color: #ffffff; /* Change icon color to white on hover */
+}
+
+.fa-file {
+    color: #3a0303; /* Initial color for the icon */
+    transition: color 0.5s ease; /* Smooth transition for icon color change */
+}
+
+
+
+  .portfolio{
+      /* background-color: #6f6aa7; */
       height: 99vh;
       width: 98.5vw;
       overflow-x: hidden;
@@ -332,7 +373,8 @@ list-style-type: none;
   font-size: 27px;
   padding: 13px;
   margin: 10px;
-  border: none;
+  border:1px solid #120000;
+  border-radius: 17px;
   background-color: transparent;
   
  }
@@ -377,25 +419,34 @@ list-style-type: none;
 .card img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  border-radius: 10px 10px;
 }
  .card .btns{
   display: flex;
  }
- .card .btn{
+ 
+ .card .btn {
   margin: 10px;
   padding: 10px;
- }
- .card .btn a{
+  border: 1px solid #120000;
+  background-color: rgb(175, 175, 174);  /* Initial background color */
+  color: #320909; /* Initial text color */
+}
+
+.card .btn a {
   text-decoration: none;
-  }
+  color: inherit; /* Inherit the button's text color */
+}
 
-.card .btn:hover{
-     color: #cec7de;
-  }
+.card .btn:hover {
+  background-color:#3a0303; /* Change background color on hover */
+  color: #e1e1e1; /* Change text color on hover */
+}
 
-
+.card .btn a:hover {
+  color: inherit; /* Ensures that the link text color matches the parent button on hover */
+}
 
 
 
@@ -520,6 +571,9 @@ list-style-type: none;
   } 
 }
 
+
+
+
 .contact{
   height: 55vh;
   width: 98.5vw;
@@ -592,8 +646,8 @@ to{
   clip-path:inset(0 0 0 0);
 }
 } 
-.abouthead,.aboutContent, .box, .porttitle,  .projects{
+/* .abouthead,.aboutContent, .box, .porttitle,  .projects{
 animation: appear linear;
 animation-timeline: view();
 animation-range: entry 0% cover 40%;
-} 
+}  */
