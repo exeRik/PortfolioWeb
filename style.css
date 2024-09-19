@@ -878,28 +878,28 @@ nav .bar .fa-bars{
 
 } */
 
-@media(max-width: 365px){
+@media(max-width: 450px){
   nav{
-    min-width: 900px;
+    min-width: 1100px;
   }
   .home{
-    min-width: 900px;
+    min-width: 1100px;
     height: 1400px;
   }
  .About{
-  min-width: 900px;
-  height: 900px;
+  min-width: 1100px;
+  height: 1100px;
  }
  .portfolio{
-  min-width: 900px;
-  height: 900px;
+  min-width: 1100px;
+  height: 1100px;
  }
  .contact{
-  min-width: 900px;
+  min-width: 1100px;
   height: 690px;
  }
  footer{
-  min-width: 900px;
+  min-width: 1100px;
   height: 210px;
  }
   nav ul{
