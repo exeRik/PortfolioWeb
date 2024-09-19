@@ -338,7 +338,7 @@ display: none;
   border-style: solid;
   border-width: 2.5px;
   padding: 45px;
-  background-color: #bdbbc4 ;
+  background-color: #bdbbc4;
   margin: 0px 5vw 0px 0px;
  }
  .box0:hover{
@@ -943,6 +943,7 @@ nav .bar .fa-bars{
    }
    .aboutContent img{
     padding: 0;
+    display: none;
    }
    .aboutnoimage{
     /* background-color: #c38686; */
