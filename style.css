@@ -921,6 +921,7 @@ nav .bar .fa-bars{
   }
   .image-hidden{
     display: block;
+    margin: auto;
   }
   .home .image{
     display: none;
@@ -941,7 +942,7 @@ nav .bar .fa-bars{
     font-size: 7vh; 
    }
    .aboutContent img{
-    display: none;
+    padding: 0;
    }
    .aboutnoimage{
     /* background-color: #c38686; */
@@ -1003,7 +1004,8 @@ nav .bar .fa-bars{
       }
       .side1, .side2{
         display: inline-block;
-        margin: 0px; 
+        display: block;
+        margin: auto;
       }
       .side1  #sub, .side2 input , .btncontact,.side1 input{
         width: 150vw;
