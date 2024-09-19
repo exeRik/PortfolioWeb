@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
+//   let bar = document.querySelector('.bar');
+//   bar.addEventListener("click",dropdown);
+//   function dropdown(){
+
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
     document.querySelector('.porttitle .web').addEventListener('click', function(){
         document.querySelector('.carousel--active').classList.remove('carousel--active');
         document.querySelector('.carousel2').classList.add('carousel--active');
